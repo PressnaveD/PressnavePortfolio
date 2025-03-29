@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressnave D | Full Stack Developer & Digital Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <canvas class="particles" id="particles"></canvas>
+
+    <!-- Floating 3D Elements -->
+    <img src="https://cdn-icons-png.flaticon.com/256/4359/4359784.png" class="floating-3d model-1" alt="3D Model">
+    <img src="https://cdn-icons-png.flaticon.com/256/8799/8799089.png" class="floating-3d model-2" alt="3D Model">
+    <img src="https://cdn-icons-png.flaticon.com/256/7830/7830599.png" class="floating-3d model-3" alt="3D Model">
+
+    <header>
+        <div class="container">
+            <div class="profile-container">
+                <!-- Placeholder for profile image - replace with actual image -->
+                <img src="https://i.imgur.com/Cnb6Cxg.jpeg" alt="Pressnave D" class="profile-img">
+            </div>
+            <h1>Pressnave D</h1>
+            <p class="tagline">Full Stack Developer | UI/UX Designer | 3D Artist</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/PressnaveD" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/pressnave-dinesh-12a2832bb/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:pressnave@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.behance.net/pressnavedinesh3545" class="social-link">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="https://dribbble.com/pressnave" class="social-link">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+            
+            <div>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="PressnaveDRESUME.pdf" class="btn btn-outline">Download RESUME</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <center><h2 id="desc">I am a passionate MCA student with a strong desire to be a Software Developer. Equipped with a solid understanding of programming languages, frameworks, and with situational analysis and problem-solving skills, I am eager to develop my skillset and to leverage my knowledge and practical skills with experienced leads in the software industry.</h2>
+                <h2 id="desc" >Beyond my formal education, I am an active freelancer, offering services in software development, UI/UX design, logo creation, and 3D modeling. I also enjoy teaching coding to aspiring developers, sharing my knowledge through online platforms and personal mentorship.</h2>
+                <h2 id="desc" >My goal is to create beautiful, functional digital experiences that solve real-world problems while continuously expanding my expertise in both development and design disciplines.</h2>
+                    </center>   
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="card">
+                    <h3 class="card-title">Programming Languages</h3>
+                    <div class="skill-category">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <div>
+                                <span>Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <div>
+                                <span>PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div>
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div>
+                                <span>Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Frameworks & Libraries</h3>
+                    <div class="skill-category">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <span>Spring</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                            <div>
+                                <span>Laravel</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div>
+                                <span>React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <div>
+                                <span>Firebase</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Frameworks & Libraries</h3>
+                    <div class="skill-category">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <span>Spring</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                            <div>
+                                <span>Laravel</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div>
+                                <span>React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <div>
+                                <span>Firebase</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title">Design & Other Skills</h3>
+                    <div class="skill-category">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <div>
+                                <span>UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                            <div>
+                                <span>3D Modeling</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div>
+                                <span>SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <div>
+                                <span>Adobe Illustrator</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-date">2025-Present</div>
+                    <div class="timeline-content card">
+                        <h3>Freelance Developer & Designer</h3>
+                        <p>Working with clients worldwide to develop custom software solutions, design user interfaces, create logos, and produce 3D models for various applications.</p>
+                        <p><strong>Services:</strong> Web Development, Mobile Apps, UI/UX Design, Logo Creation, 3D Modeling, Coding Instruction</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content card">
+                        <h3>JAVA Fullstack Intern</h3>
+                        <p><strong>Feathers Software Solutions, Nagercoil</strong></p>
+                        <p>Developed multiple applications using servlets, JSP, and springBootand had a woonderfull experiencing in learing.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content card">
+                        <h3>Android Development Intern</h3>
+                        <p><strong>AK Infopark, Nagercoil</strong></p>
+                        <p>Assisted in developing features for mobile applications. Gained hands-on experience in Android development with Java, XML, and Firebase.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content card">
+                        <h3>Web Development Intern</h3>
+                        <p><strong>FXERP, Tiruneveli</strong></p>
+                        <p>Acquired experience in web applications using Laravel. Collaborated with team to develop applications using PHP and Laravel framework.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-date">2023-2025</div>
+                    <div class="timeline-content card">
+                        <h3>Master of Computer Applications (MCA)</h3>
+                        <p><strong>Francis Xavier Engineering College, Tirunelveli</strong></p>
+                        <p>Currently pursuing postgraduate degree in computer applications with focus on advanced software development concepts.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-circle"></div>
+                    <div class="timeline-date">2020-2023</div>
+                    <div class="timeline-content card">
+                        <h3>BSc - Information Technology</h3>
+                        <p><strong>Manonmaniyam Sundharanar University</strong></p>
+                        <p>Completed undergraduate degree with focus on IT fundamentals, programming, and system design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400/6c5ce7/ffffff?text=Mobile+App" alt="Mobile App Development" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Fitness Tracker App</h3>
+                        <p class="portfolio-category">Android Development</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400/a29bfe/ffffff?text=E-commerce+Website" alt="E-commerce Website" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">E-commerce Platform</h3>
+                        <p class="portfolio-category">Web Development</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400/fd79a8/ffffff?text=UI+Design" alt="UI Design" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Banking App UI</h3>
+                        <p class="portfolio-category">UI/UX Design</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400/00b894/ffffff?text=3D+Model" alt="3D Model" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Fantasy Character</h3>
+                        <p class="portfolio-category">3D Modeling</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400/0984e3/ffffff?text=Logo+Design" alt="Logo Design" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Brand Identity</h3>
+                        <p class="portfolio-category">Logo Design</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400/6c5ce7/ffffff?text=Web+App" alt="Web Application" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Project Management Tool</h3>
+                        <p class="portfolio-category">Full Stack Development</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" class="btn">View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="3d-art">
+        <div class="container">
+            <h2 class="section-title">3D Art & Character Design</h2>
+            <div class="card">
+                <p>My passion for 3D modeling and character design allows me to bring imaginative concepts to life. Below are some samples of my work in this creative field.</p>
+                
+                <div class="model-viewer">
+                    <div class="model-placeholder">
+                        <i class="fas fa-cube"></i>
+                        <p>3D Model Viewer - Interactive models would appear here</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/600x400/6c5ce7/ffffff?text=Character+1" alt="Character Design" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Cyberpunk Warrior</h3>
+                            <p class="portfolio-category">Character Design</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/600x400/a29bfe/ffffff?text=Character+2" alt="Character Design" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Fantasy Elf</h3>
+                            <p class="portfolio-category">3D Modeling</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/600x400/fd79a8/ffffff?text=Environment" alt="3D Environment" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <h3 class="portfolio-title">Sci-Fi Cityscape</h3>
+                            <p class="portfolio-category">Environment Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" class="btn btn-outline">View 3D Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="card">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+    
+                <div style="text-align: center; margin-top: 30px;">
+                    <p>Or reach out directly:</p>
+                    <p><i class="fas fa-envelope"></i> pressnave@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 75300 53545</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pressnave D. All rights reserved.</p>
+            <p>Designed with ❤️ by Pressnave</p>
+        </div>
+    </footer>
+<script>
+     (function() {
+        emailjs.init("h9MnjHsHR3VYIUB8p"); // Replace with your EmailJS public key
+    })();
+
+    (function () {
+        emailjs.init("h9MnjHsHR3VYIUB8p"); // Replace with your EmailJS public key
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const formData = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
+        };
+
+        emailjs.send("service_4xlo05o", "template_4l2gmbi", formData)
+            .then(response => {
+                alert("Email sent successfully!");
+                console.log("SUCCESS:", response);
+                document.getElementById("contact-form").reset(); // Reset form after successful submission
+            })
+            .catch(error => {
+                alert("Failed to send email. Try again later.");
+                console.log("ERROR:", error);
+            });
+    }
+
+    // Attach event listener to the form using its ID
+    document.getElementById("contact-form").addEventListener("submit", sendEmail);
+
+
+  // Theme Toggle
+    // const themeToggle = document.getElementById('themeToggle');
+    // const html = document.documentElement;
+    
+    // themeToggle.addEventListener('click', () => {
+    //     html.dataset.theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    //     themeToggle.innerHTML = html.dataset.theme === 'dark' ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+    // });
+    
+    // Particles.js
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const particles = [];
+    const particleCount = window.innerWidth < 768 ? 30 : 100;
+    
+    for (let i = 0; i < particleCount; i++) {
+        particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 3 + 1,
+            speedX: Math.random() * 1 - 0.5,
+            speedY: Math.random() * 1 - 0.5
+        });
+    }
+    
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--accent-secondary');
+            ctx.fill();
+            
+            p.x += p.speedX;
+            p.y += p.speedY;
+            
+            if (p.x < 0 || p.x > canvas.width) p.speedX *= -1;
+            if (p.y < 0 || p.y > canvas.height) p.speedY *= -1;
+        }
+        
+        requestAnimationFrame(animateParticles);
+    }
+    
+    animateParticles();
+    
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    
+    // Animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+    
+    document.querySelectorAll('.card, .portfolio-item, .timeline-content').forEach(el => {
+        observer.observe(el);
+    });
+ </script>
+     
+</body>
+</html>
